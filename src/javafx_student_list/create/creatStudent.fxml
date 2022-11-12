@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="javafx_student_list.create.CreateController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text layoutX="337.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a Student">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Button layoutX="44.0" layoutY="27.0" mnemonicParsing="false" onAction="#backToList" prefHeight="21.0" prefWidth="81.0" text="&lt;&lt; Back" />
+        <TextField fx:id="txtName" layoutX="176.0" layoutY="127.0" prefHeight="35.0" prefWidth="447.0" promptText="Name">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtEmail" layoutX="176.0" layoutY="193.0" prefHeight="35.0" prefWidth="447.0" promptText="Email">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtMark" layoutX="177.0" layoutY="259.0" prefHeight="35.0" prefWidth="447.0" promptText="Mark">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Button layoutX="176.0" layoutY="394.0" mnemonicParsing="false" onAction="#submit" prefHeight="35.0" prefWidth="447.0" style="-fx-background-color: orange;" text="Submit" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <ComboBox fx:id="cbGender" layoutX="177.0" layoutY="327.0" prefHeight="35.0" prefWidth="447.0" promptText="Gender" />
+    </children>
+</Pane>
+
+

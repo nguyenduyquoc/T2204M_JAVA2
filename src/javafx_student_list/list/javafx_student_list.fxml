@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_student_list.list.Javafx_student_list_Controller">
+    <children>
+        <Button onAction="#search" layoutX="302.0" layoutY="34.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="77.0" text="Search">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="599.0" layoutY="34.0" mnemonicParsing="false" onAction="#createStudent" prefHeight="26.0" prefWidth="140.0" text="Create a Student">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tbStudents" layoutX="34.0" layoutY="116.0" prefHeight="464.0" prefWidth="740.0">
+            <columns>
+                <TableColumn fx:id="cName" prefWidth="219.0" text="Name" />
+                <TableColumn fx:id="cEmail" prefWidth="244.0" text="Email" />
+                <TableColumn fx:id="cMark" prefWidth="77.0" text="Mark" />
+                <TableColumn fx:id="cGender" minWidth="0.0" prefWidth="85.0" text="Gender" />
+                <TableColumn fx:id="cAction" prefWidth="108.0" text="Action" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtSearch" layoutX="34.0" layoutY="34.0" prefHeight="29.0" prefWidth="270.0" />
+    </children>
+</Pane>
+
